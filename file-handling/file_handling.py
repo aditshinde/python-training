@@ -26,3 +26,23 @@ inputFile = open(r'temp_file.txt','r')
 readText = inputFile.readlines()
 print(readText)
 inputFile.close()
+
+with open(r'temp_file.txt','w') as fo:
+    fo.write('Sometext here.')
+
+with open(r'temp_file.txt','r') as fo:
+    print(fo.read())
+
+
+
+
+
+
+
+
+
+
+
+
+
+

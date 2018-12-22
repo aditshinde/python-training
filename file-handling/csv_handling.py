@@ -12,7 +12,6 @@ with open('AllBooks.csv','w') as outFile:
         csv_writer.writerow(row)
 
 with open('AllBooks.csv','r') as inFile:
-    csv_reader = csv.reader(inFile)
     csvIterable = csv.reader(inFile)
     for row in csvIterable:
         print(row)
